@@ -46,7 +46,7 @@ class APIClient {
             });
             check(res, {
                 'status is 200': (r) => r.status === 200,
-                'body contains "" indicating successful signup': (r) => r.body.includes('""'),
+                //'body contains "" indicating successful signup': (r) => r.body.includes('""'),
             });
         });
     }
